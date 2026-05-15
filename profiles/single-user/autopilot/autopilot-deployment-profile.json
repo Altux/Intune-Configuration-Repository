@@ -1,0 +1,38 @@
+{
+  "managementServiceAppId": null,
+  "hardwareHashExtractionEnabled": true,
+  "createdDateTime": "2025-12-08T09:24:08.4065081Z",
+  "enableWhiteGlove": true,
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/windowsAutopilotDeploymentProfiles/$entity",
+  "extractHardwareHash": true,
+  "outOfBoxExperienceSettings": {
+    "deviceUsageType": "singleUser",
+    "hidePrivacySettings": true,
+    "hideEscapeLink": true,
+    "userType": "standard",
+    "hideEULA": true,
+    "skipKeyboardSelectionPage": true
+  },
+  "preprovisioningAllowed": true,
+  "displayName": "[POC_REPLACE] FullCloud",
+  "enrollmentStatusScreenSettings": null,
+  "outOfBoxExperienceSetting": {
+    "escapeLinkHidden": true,
+    "privacySettingsHidden": true,
+    "userType": "standard",
+    "keyboardSelectionPageSkipped": true,
+    "eulaHidden": true,
+    "deviceUsageType": "singleUser"
+  },
+  "id": "43c59c8a-4efa-4642-8d86-b8735f62e868",
+  "@odata.type": "#microsoft.graph.azureADWindowsAutopilotDeploymentProfile",
+  "deviceType": "windowsPc",
+  "deviceNameTemplate": "",
+  "language": "os-default",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "description": "",
+  "locale": "os-default",
+  "lastModifiedDateTime": "2025-12-18T09:57:40.4706054Z"
+}

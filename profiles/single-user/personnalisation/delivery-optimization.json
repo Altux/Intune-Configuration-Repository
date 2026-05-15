@@ -1,0 +1,33 @@
+{
+  "vpnPeerCaching": "notConfigured",
+  "maximumCacheAgeInDays": 7,
+  "foregroundDownloadFromHttpDelayInSeconds": 60,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "id": "4f1952c1-8c11-42a7-bcc6-a72bb1db41d3",
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "bandwidthMode": null,
+  "modifyCacheLocation": null,
+  "minimumRamAllowedToPeerInGigabytes": 4,
+  "minimumDiskSizeAllowedToPeerInGigabytes": 32,
+  "maximumCacheSize": null,
+  "description": null,
+  "cacheServerForegroundDownloadFallbackToHttpDelayInSeconds": 0,
+  "deliveryOptimizationMode": "httpWithPeeringNat",
+  "minimumBatteryPercentageAllowedToUpload": 40,
+  "displayName": "[POC_REPLACE] Optimisation de livraison",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "minimumFileSizeToCacheInMegabytes": 10,
+  "@odata.type": "#microsoft.graph.windowsDeliveryOptimizationConfiguration",
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "lastModifiedDateTime": "2025-12-15T11:23:16.3424473Z",
+  "restrictPeerSelectionBy": "notConfigured",
+  "cacheServerHostNames": [],
+  "createdDateTime": "2025-12-15T11:23:16.3424473Z",
+  "backgroundDownloadFromHttpDelayInSeconds": 60,
+  "version": 1,
+  "cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds": 0,
+  "supportsScopeTags": true,
+  "groupIdSource": null
+}

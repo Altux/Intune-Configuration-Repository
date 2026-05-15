@@ -1,0 +1,31 @@
+{
+  "name": "App Control for Business (WDAC base)",
+  "description": "Mode App Control for Business : execution applis signees Microsoft + Store + reputation ISG. Pour parc managed avec apps internes signees, basculer en mode audit puis enforce avec policy XML signee. Refs NCSC : App-Control-for-Business.json | ANSSI : 3.5.4",
+  "platforms": "windows10",
+  "technologies": "mdm",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settings": [
+    {
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+        "settingDefinitionId": "device_vendor_msft_policy_config_applicationcontrol_appcontrolforbusiness",
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_policy_config_applicationcontrol_appcontrolforbusiness_2",
+          "children": []
+        }
+      }
+    },
+    {
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+        "settingDefinitionId": "device_vendor_msft_policy_config_smartlocker_configuresmartlocker",
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_policy_config_smartlocker_configuresmartlocker_1",
+          "children": []
+        }
+      }
+    }
+  ]
+}

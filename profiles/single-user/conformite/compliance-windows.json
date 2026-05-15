@@ -1,0 +1,49 @@
+{
+  "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
+  "displayName": "Conformite Windows 11 - Securite renforcee",
+  "description": "Politique de conformite Windows 11 : Secure Boot, BitLocker, TPM, Defender, code integrity, MDE, durcissement mot de passe.",
+  "passwordRequired": true,
+  "passwordBlockSimple": true,
+  "passwordRequiredToUnlockFromIdle": true,
+  "passwordMinutesOfInactivityBeforeLock": 15,
+  "passwordExpirationDays": null,
+  "passwordMinimumLength": 14,
+  "passwordMinimumCharacterSetCount": 4,
+  "passwordRequiredType": "alphanumericWithSymbols",
+  "passwordPreviousPasswordBlockCount": 10,
+  "requireHealthyDeviceReport": true,
+  "osMinimumVersion": "10.0.22631.0",
+  "osMaximumVersion": null,
+  "mobileOsMinimumVersion": null,
+  "mobileOsMaximumVersion": null,
+  "earlyLaunchAntiMalwareDriverEnabled": true,
+  "bitLockerEnabled": true,
+  "secureBootEnabled": true,
+  "codeIntegrityEnabled": true,
+  "storageRequireEncryption": true,
+  "activeFirewallRequired": true,
+  "defenderEnabled": true,
+  "defenderVersion": null,
+  "signatureOutOfDate": false,
+  "rtpEnabled": true,
+  "antivirusRequired": true,
+  "antiSpywareRequired": true,
+  "tpmRequired": true,
+  "deviceThreatProtectionEnabled": true,
+  "deviceThreatProtectionRequiredSecurityLevel": "low",
+  "configurationManagerComplianceRequired": false,
+  "validOperatingSystemBuildRanges": [],
+  "scheduledActionsForRule": [
+    {
+      "ruleName": "PasswordRequired",
+      "scheduledActionConfigurations": [
+        {
+          "actionType": "block",
+          "gracePeriodHours": 24,
+          "notificationTemplateId": "",
+          "notificationMessageCCList": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "name": "[POC_REPLACE] Windows HELLO - KERBEROS",
+  "technologies": "mdm",
+  "platforms": "windows10",
+  "id": "aaafda2e-8114-4c0b-8267-2df9a3d2689b",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "description": "",
+  "lastModifiedDateTime": "2026-04-15T13:24:54.8730329Z",
+  "settingCount": 2,
+  "createdDateTime": "2026-04-15T13:23:37.5878252Z",
+  "templateReference": {
+    "templateDisplayVersion": null,
+    "templateDisplayName": null,
+    "templateId": "",
+    "templateFamily": "none"
+  },
+  "priorityMetaData": null,
+  "creationSource": null,
+  "settings": [
+    {
+      "id": "0",
+      "settingInstance": {
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+        "settingDefinitionId": "device_vendor_msft_passportforwork_{tenantid}",
+        "groupSettingCollectionValue": [
+          {
+            "settingValueTemplateReference": null,
+            "children": [
+              {
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "choiceSettingValue": {
+                  "value": "device_vendor_msft_passportforwork_{tenantid}_policies_usecloudtrustforonpremauth_true",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "device_vendor_msft_passportforwork_{tenantid}_policies_usecloudtrustforonpremauth",
+                "auditRuleInformation": null
+              }
+            ]
+          }
+        ],
+        "auditRuleInformation": null
+      }
+    },
+    {
+      "id": "1",
+      "settingInstance": {
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+        "settingDefinitionId": "user_vendor_msft_passportforwork_{tenantid}",
+        "groupSettingCollectionValue": [
+          {
+            "settingValueTemplateReference": null,
+            "children": [
+              {
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "choiceSettingValue": {
+                  "value": "user_vendor_msft_passportforwork_{tenantid}_policies_usepassportforwork_true",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "user_vendor_msft_passportforwork_{tenantid}_policies_usepassportforwork",
+                "auditRuleInformation": null
+              }
+            ]
+          }
+        ],
+        "auditRuleInformation": null
+      }
+    }
+  ]
+}

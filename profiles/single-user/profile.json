@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "2.0",
+  "id": "single-user",
+  "displayName": "Poste utilisateur dedie",
+  "description": "Modele entreprise standard : 1 utilisateur principal par appareil.",
+  "scope": "user-affinity",
+  "autopilot": [
+    { "path": "autopilot/autopilot-deployment-profile.json", "label": "Autopilot user-driven (deviceUsageType=singleUser)" }
+  ],
+  "esp": [
+    { "path": "esp/esp-page.json", "label": "Enrollment Status Page (timeout 120 min)" }
+  ],
+  "conformite": [
+    { "path": "conformite/compliance-windows.json", "label": "Compliance Win11 (OS min, password, BitLocker, Defender)" }
+  ],
+  "personnalisation": [
+    { "path": "personnalisation/taskbar-layout.json",               "label": "TaskBar Layout" },
+    { "path": "personnalisation/configurations-25h2.json",          "label": "Personnalisation 25H2" },
+    { "path": "personnalisation/delivery-optimization.json",        "label": "Delivery Optimization" },
+    { "path": "personnalisation/health-monitoring.json",            "label": "Health Monitoring" },
+    { "path": "personnalisation/wireless-display.json",             "label": "Wireless Display" },
+    { "path": "personnalisation/windows-hello-cloud-kerberos.json", "label": "Windows Hello Cloud Kerberos" }
+  ],
+  "securite": [
+    { "path": "securite/01-bitlocker.json",                     "label": "BitLocker TPM+PIN (complement baseline)" },
+    { "path": "securite/02-asr-rules-complete.json",            "label": "ASR 16 regles Block (complement baseline)" },
+    { "path": "securite/03-firewall-block-by-default.json",     "label": "Firewall block-by-default" },
+    { "path": "securite/04-device-control-usb.json",            "label": "Device Control USB" },
+    { "path": "securite/05-exploit-protection-xml.json",        "label": "Exploit Protection XML custom" },
+    { "path": "securite/06-windows-update-rings.json",          "label": "Windows Update rings ANSSI" },
+    { "path": "securite/07-app-control-wdac.json",              "label": "App Control / WDAC base" },
+    { "path": "securite/08-defender-cloud-edr-advanced.json",   "label": "Defender CFA + scan tuning" },
+    { "path": "securite/09-device-control-additional.json",     "label": "Device Control BT/RDP/Wi-Fi/Print" },
+    { "path": "securite/10-securite-avancee-25h2.json",         "label": "Securite avancee 25H2" }
+  ],
+  "notes": [
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "[POC_REPLACE] TaskBar Layout",
+  "technologies": "mdm",
+  "platforms": "windows10",
+  "id": "c10c29ca-4b63-479a-861b-c3df2acb3322",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "description": "",
+  "lastModifiedDateTime": "2026-04-20T14:12:45.0129378Z",
+  "settingCount": 1,
+  "createdDateTime": "2026-04-20T14:12:45.0129378Z",
+  "templateReference": {
+    "templateDisplayVersion": null,
+    "templateDisplayName": null,
+    "templateId": "",
+    "templateFamily": "none"
+  },
+  "priorityMetaData": null,
+  "creationSource": null,
+  "settings": [
+    {
+      "id": "0",
+      "settingInstance": {
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+        "simpleSettingValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "value": "<?xml version=\"1.0\" encoding=\"utf-8\"?> <LayoutModificationTemplate   xmlns=\"http://schemas.microsoft.com/Start/2014/LayoutModification\"   xmlns:defaultlayout=\"http://schemas.microsoft.com/Start/2014/FullDefaultLayout\"   xmlns:start=\"http://schemas.microsoft.com/Start/2014/StartLayout\"   xmlns:taskbar=\"http://schemas.microsoft.com/Start/2014/TaskbarLayout\"   Version=\"1\">   <CustomTaskbarLayoutCollection PinListPlacement=\"Replace\">     <defaultlayout:TaskbarLayout>       <taskbar:TaskbarPinList>         <taskbar:DesktopApp DesktopApplicationLinkPath=\"%ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Edge.lnk\" PinGeneration=\"2\"/>         <taskbar:DesktopApp DesktopApplicationID=\"Microsoft.Windows.Explorer\" PinGeneration=\"2\"/>         <taskbar:DesktopApp DesktopApplicationLinkPath=\"%ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\Word.lnk\" PinGeneration=\"2\"/>         <taskbar:DesktopApp DesktopApplicationLinkPath=\"%ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\Excel.lnk\" PinGeneration=\"2\"/>         <taskbar:DesktopApp DesktopApplicationLinkPath=\"%ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\PowerPoint.lnk\" PinGeneration=\"2\"/>         <taskbar:DesktopApp DesktopApplicationLinkPath=\"%ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\KeePassXC\\KeePassXC.lnk\" PinGeneration=\"2\"/>       </taskbar:TaskbarPinList>     </defaultlayout:TaskbarLayout>   </CustomTaskbarLayoutCollection> </LayoutModificationTemplate>",
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "device_vendor_msft_policy_config_start_startlayout",
+        "auditRuleInformation": null
+      }
+    }
+  ]
+}

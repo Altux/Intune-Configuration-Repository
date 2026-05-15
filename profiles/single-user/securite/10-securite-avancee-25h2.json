@@ -1,0 +1,297 @@
+{
+  "name": "[POC_REPLACE] Configuration Sécurité avancée 25H2",
+  "technologies": "mdm",
+  "platforms": "windows10",
+  "id": "a178e19d-71c5-4912-b71d-170fc1a0b781",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "description": "",
+  "lastModifiedDateTime": "2026-04-27T08:43:01.1860871Z",
+  "settingCount": 13,
+  "createdDateTime": "2026-04-27T08:30:56.3326164Z",
+  "templateReference": {
+    "templateDisplayVersion": null,
+    "templateDisplayName": null,
+    "templateId": "",
+    "templateFamily": "none"
+  },
+  "priorityMetaData": null,
+  "creationSource": null,
+  "settings": [
+    {
+      "id": "0",
+      "settingInstance": {
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_bitlocker_requiredeviceencryption_1",
+          "children": [],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "device_vendor_msft_bitlocker_requiredeviceencryption",
+        "auditRuleInformation": null
+      }
+    },
+    {
+      "id": "1",
+      "settingInstance": {
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+        "settingDefinitionId": "device_vendor_msft_policy_config_defender_attacksurfacereductionrules",
+        "groupSettingCollectionValue": [
+          {
+            "settingValueTemplateReference": null,
+            "children": [
+              {
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "choiceSettingValue": {
+                  "value": "device_vendor_msft_policy_config_defender_attacksurfacereductionrules_blockpersistencethroughwmieventsubscription_block",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "device_vendor_msft_policy_config_defender_attacksurfacereductionrules_blockpersistencethroughwmieventsubscription",
+                "auditRuleInformation": null
+              },
+              {
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "choiceSettingValue": {
+                  "value": "device_vendor_msft_policy_config_defender_attacksurfacereductionrules_blockprocesscreationsfrompsexecandwmicommands_block",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "device_vendor_msft_policy_config_defender_attacksurfacereductionrules_blockprocesscreationsfrompsexecandwmicommands",
+                "auditRuleInformation": null
+              }
+            ]
+          }
+        ],
+        "auditRuleInformation": null
+      }
+    },
+    {
+      "id": "2",
+      "settingInstance": {
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_policy_config_office16v2~policy~l_microsoftofficemachine~l_updates_l_enableautomaticupdates_1",
+          "children": [],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "device_vendor_msft_policy_config_office16v2~policy~l_microsoftofficemachine~l_updates_l_enableautomaticupdates",
+        "auditRuleInformation": null
+      }
+    },
+    {
+      "id": "3",
+      "settingInstance": {
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_policy_config_office16v2~policy~l_microsoftofficemachine~l_updates_l_hideenabledisableupdates_1",
+          "children": [],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "device_vendor_msft_policy_config_office16v2~policy~l_microsoftofficemachine~l_updates_l_hideenabledisableupdates",
+        "auditRuleInformation": null
+      }
+    },
+    {
+      "id": "4",
+      "settingInstance": {
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_bitlocker_systemdrivesminimumpinlength_1",
+          "children": [
+            {
+              "settingInstanceTemplateReference": null,
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+              "simpleSettingValue": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                "value": 6,
+                "settingValueTemplateReference": null
+              },
+              "settingDefinitionId": "device_vendor_msft_bitlocker_systemdrivesminimumpinlength_minpinlength",
+              "auditRuleInformation": null
+            }
+          ],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "device_vendor_msft_bitlocker_systemdrivesminimumpinlength",
+        "auditRuleInformation": null
+      }
+    },
+    {
+      "id": "5",
+      "settingInstance": {
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_bitlocker_systemdrivesrequirestartupauthentication_1",
+          "children": [
+            {
+              "settingInstanceTemplateReference": null,
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+              "choiceSettingValue": {
+                "value": "device_vendor_msft_bitlocker_systemdrivesrequirestartupauthentication_configurenontpmstartupkeyusage_name_1",
+                "children": [],
+                "settingValueTemplateReference": null
+              },
+              "settingDefinitionId": "device_vendor_msft_bitlocker_systemdrivesrequirestartupauthentication_configurenontpmstartupkeyusage_name",
+              "auditRuleInformation": null
+            },
+            {
+              "settingInstanceTemplateReference": null,
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+              "choiceSettingValue": {
+                "value": "device_vendor_msft_bitlocker_systemdrivesrequirestartupauthentication_configuretpmpinkeyusagedropdown_name_2",
+                "children": [],
+                "settingValueTemplateReference": null
+              },
+              "settingDefinitionId": "device_vendor_msft_bitlocker_systemdrivesrequirestartupauthentication_configuretpmpinkeyusagedropdown_name",
+              "auditRuleInformation": null
+            },
+            {
+              "settingInstanceTemplateReference": null,
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+              "choiceSettingValue": {
+                "value": "device_vendor_msft_bitlocker_systemdrivesrequirestartupauthentication_configuretpmstartupkeyusagedropdown_name_2",
+                "children": [],
+                "settingValueTemplateReference": null
+              },
+              "settingDefinitionId": "device_vendor_msft_bitlocker_systemdrivesrequirestartupauthentication_configuretpmstartupkeyusagedropdown_name",
+              "auditRuleInformation": null
+            },
+            {
+              "settingInstanceTemplateReference": null,
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+              "choiceSettingValue": {
+                "value": "device_vendor_msft_bitlocker_systemdrivesrequirestartupauthentication_configurepinusagedropdown_name_2",
+                "children": [],
+                "settingValueTemplateReference": null
+              },
+              "settingDefinitionId": "device_vendor_msft_bitlocker_systemdrivesrequirestartupauthentication_configurepinusagedropdown_name",
+              "auditRuleInformation": null
+            },
+            {
+              "settingInstanceTemplateReference": null,
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+              "choiceSettingValue": {
+                "value": "device_vendor_msft_bitlocker_systemdrivesrequirestartupauthentication_configuretpmusagedropdown_name_2",
+                "children": [],
+                "settingValueTemplateReference": null
+              },
+              "settingDefinitionId": "device_vendor_msft_bitlocker_systemdrivesrequirestartupauthentication_configuretpmusagedropdown_name",
+              "auditRuleInformation": null
+            }
+          ],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "device_vendor_msft_bitlocker_systemdrivesrequirestartupauthentication",
+        "auditRuleInformation": null
+      }
+    },
+    {
+      "id": "6",
+      "settingInstance": {
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_policy_config_admx_microsoftdefenderantivirus_exploitguard_controlledfolderaccess_protectedfolders_0",
+          "children": [],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "device_vendor_msft_policy_config_admx_microsoftdefenderantivirus_exploitguard_controlledfolderaccess_protectedfolders",
+        "auditRuleInformation": null
+      }
+    },
+    {
+      "id": "7",
+      "settingInstance": {
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_policy_config_admx_terminalserver_ts_user_authentication_policy_1",
+          "children": [],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "device_vendor_msft_policy_config_admx_terminalserver_ts_user_authentication_policy",
+        "auditRuleInformation": null
+      }
+    },
+    {
+      "id": "8",
+      "settingInstance": {
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_policy_config_connectivity_prohibitinstallationandconfigurationofnetworkbridge_1",
+          "children": [],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "device_vendor_msft_policy_config_connectivity_prohibitinstallationandconfigurationofnetworkbridge",
+        "auditRuleInformation": null
+      }
+    },
+    {
+      "id": "9",
+      "settingInstance": {
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_policy_config_admx_networkconnections_nc_stddomainusersetlocation_1",
+          "children": [],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "device_vendor_msft_policy_config_admx_networkconnections_nc_stddomainusersetlocation",
+        "auditRuleInformation": null
+      }
+    },
+    {
+      "id": "10",
+      "settingInstance": {
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+        "simpleSettingValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "value": 1,
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networkaccess_donotallowstorageofpasswordsandcredentialsfornetworkauthentication",
+        "auditRuleInformation": null
+      }
+    },
+    {
+      "id": "11",
+      "settingInstance": {
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+        "simpleSettingValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "value": 2,
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networksecurity_ldapclientsigningrequirements",
+        "auditRuleInformation": null
+      }
+    },
+    {
+      "id": "12",
+      "settingInstance": {
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+        "simpleSettingValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "value": "16",
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "device_vendor_msft_policy_config_devicelock_accountlockoutpolicy",
+        "auditRuleInformation": null
+      }
+    }
+  ]
+}

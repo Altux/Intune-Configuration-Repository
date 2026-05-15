@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0",
+  "name": "Intune Configuration Repository (Public)",
+  "description": "Pack de configurations Intune pour Windows 11. Decoupage par profils (cas d'usage) : poste utilisateur dedie, poste partage multi-utilisateur, etc. Forkable, extensible : ajoute tes propres profils dans profiles/<id>/ + une entree ici.",
+  "version": "1.0.0",
+  "updatedAt": "2026-05-12",
+  "profiles": [
+    {
+      "id": "single-user",
+      "displayName": "Poste utilisateur dedie",
+      "summary": "1 utilisateur principal par appareil. Autopilot user-driven.",
+      "path": "profiles/single-user/profile.json"
+    }
+  ]
+}
