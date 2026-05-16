@@ -15,20 +15,35 @@
     {
       "settingInstance": {
         "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-        "settingDefinitionId": "device_vendor_msft_bitlocker_systemdrivespolicy_encryptionmethodbydrivetype_encryptionmethodwithxtsosdroptions",
+        "settingDefinitionId": "device_vendor_msft_bitlocker_encryptionmethodbydrivetype",
         "choiceSettingValue": {
-          "value": "device_vendor_msft_bitlocker_systemdrivespolicy_encryptionmethodbydrivetype_encryptionmethodwithxtsosdroptions_7",
-          "children": []
-        }
-      }
-    },
-    {
-      "settingInstance": {
-        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-        "settingDefinitionId": "device_vendor_msft_bitlocker_systemdrivespolicy_encryptionmethodbydrivetype_encryptionmethodwithxtsfdvdroptions",
-        "choiceSettingValue": {
-          "value": "device_vendor_msft_bitlocker_systemdrivespolicy_encryptionmethodbydrivetype_encryptionmethodwithxtsfdvdroptions_7",
-          "children": []
+          "value": "device_vendor_msft_bitlocker_encryptionmethodbydrivetype_1",
+          "children": [
+            {
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+              "settingDefinitionId": "device_vendor_msft_bitlocker_encryptionmethodbydrivetype_encryptionmethodwithxtsosdroptions",
+              "choiceSettingValue": {
+                "value": "device_vendor_msft_bitlocker_encryptionmethodbydrivetype_encryptionmethodwithxtsosdroptions_7",
+                "children": []
+              }
+            },
+            {
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+              "settingDefinitionId": "device_vendor_msft_bitlocker_encryptionmethodbydrivetype_encryptionmethodwithxtsfdvdroptions",
+              "choiceSettingValue": {
+                "value": "device_vendor_msft_bitlocker_encryptionmethodbydrivetype_encryptionmethodwithxtsfdvdroptions_7",
+                "children": []
+              }
+            },
+            {
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+              "settingDefinitionId": "device_vendor_msft_bitlocker_encryptionmethodbydrivetype_encryptionmethodwithxtsrdvdroptions",
+              "choiceSettingValue": {
+                "value": "device_vendor_msft_bitlocker_encryptionmethodbydrivetype_encryptionmethodwithxtsrdvdroptions_4",
+                "children": []
+              }
+            }
+          ]
         }
       }
     },

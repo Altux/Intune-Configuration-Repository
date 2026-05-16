@@ -1,6 +1,6 @@
 {
   "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
-  "displayName": "[POC_REPLACE] Enrollement Status Page",
+  "displayName": "Enrollment Status Page (Autopilot)",
   "description": "Enrollment Status Page : affichage du progres d'installation pendant l'Autopilot, retry autorise, reset autorise en cas d'echec, suivi Autopilot uniquement.",
   "showInstallationProgress": true,
   "blockDeviceSetupRetryByUser": false,
@@ -12,7 +12,9 @@
   "selectedMobileAppIds": [],
   "trackInstallProgressForAutopilotOnly": true,
   "disableUserStatusTrackingAfterFirstUser": true,
-  "roleScopeTagIds": ["0"],
+  "roleScopeTagIds": [
+    "0"
+  ],
   "allowNonBlockingAppInstallation": true,
   "installQualityUpdates": true
 }

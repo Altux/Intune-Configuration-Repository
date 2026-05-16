@@ -1,0 +1,48 @@
+{
+  "added": [
+    {
+      "enabled": true,
+      "presentationValues": [],
+      "definition@odata.bind": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions('81c07ba0-7512-402d-b1f6-00856975cfab')"
+    },
+    {
+      "enabled": true,
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "value": "--tenantid--",
+          "presentation@odata.bind": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions('39147fa2-6c5e-437b-8264-19b50b891709')/presentations('fbefbbdf-5382-477c-8b6c-71f4a06e2805')"
+        },
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "value": "1",
+          "presentation@odata.bind": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions('39147fa2-6c5e-437b-8264-19b50b891709')/presentations('35c82072-a93b-4022-be14-8684c2f6fcc2')"
+        }
+      ],
+      "definition@odata.bind": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions('39147fa2-6c5e-437b-8264-19b50b891709')"
+    },
+    {
+      "enabled": true,
+      "presentationValues": [],
+      "definition@odata.bind": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions('f32292ad-d9f6-4b3e-95b2-517b379a70cb')"
+    },
+    {
+      "enabled": true,
+      "presentationValues": [],
+      "definition@odata.bind": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions('2ce2f507-aae8-49a1-98ce-dc3faafcd331')"
+    },
+    {
+      "enabled": true,
+      "presentationValues": [],
+      "definition@odata.bind": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions('61b07a01-7e60-4127-b086-f6b32458a5c5')"
+    }
+  ],
+  "updated": [],
+  "deletedIds": [],
+  "_metadata": {
+    "displayName": "OneDrive Known Folder Move + Files On-Demand",
+    "description": "Group Policy Configuration : silent sign-in, Known Folder Move (Documents/Bureau/Images) vers le tenant cible, Files On-Demand active, suppression du dossier local apres bascule. Remplacer la valeur 'tenantid' par le GUID du tenant cible.",
+    "format": "groupPolicyConfigurations/definitionValues",
+    "tenantPlaceholder": "tenantid"
+  }
+}

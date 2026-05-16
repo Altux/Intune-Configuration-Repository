@@ -1,19 +1,12 @@
 {
   "@odata.type": "#microsoft.graph.windowsHealthMonitoringConfiguration",
-  "lastModifiedDateTime": "2025-12-15T11:23:16.1314868Z",
-  "id": "5fe7d61f-23fa-40b3-9e24-82dfa7af4a3f",
-  "deviceManagementApplicabilityRuleOsVersion": null,
+  "id": "00000000-0000-0000-0000-000000000000",
   "allowDeviceHealthMonitoring": "enabled",
-  "supportsScopeTags": true,
   "configDeviceHealthMonitoringScope": "bootPerformance,windowsUpdates",
-  "createdDateTime": "2025-12-15T11:23:16.1314868Z",
-  "deviceManagementApplicabilityRuleDeviceMode": null,
   "roleScopeTagIds": [
     "0"
   ],
-  "displayName": "[POC_REPLACE] Monitoring de lintegrite Windows",
-  "deviceManagementApplicabilityRuleOsEdition": null,
+  "displayName": "Windows Health Monitoring",
   "configDeviceHealthMonitoringCustomScope": null,
-  "description": null,
-  "version": 1
+  "description": "Remontee des donnees de sante de l'appareil (boot, performance, Defender, mises a jour) vers Microsoft pour Endpoint Analytics."
 }

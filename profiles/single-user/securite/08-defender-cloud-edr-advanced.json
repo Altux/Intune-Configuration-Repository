@@ -3,7 +3,9 @@
   "description": "Complements au Security Baseline Windows : Controlled Folder Access enabled, scan reseau actif, no catchup quick scan skip, basse priorite CPU pendant scan. Refs NCSC : Defender.json | ANSSI : 3.5.1. Les settings real-time / cloudblocklevel / submitsamplesconsent sont volontairement ABSENTS pour ne pas dupliquer la baseline MS.",
   "platforms": "windows10",
   "technologies": "mdm",
-  "roleScopeTagIds": ["0"],
+  "roleScopeTagIds": [
+    "0"
+  ],
   "settings": [
     {
       "settingInstance": {

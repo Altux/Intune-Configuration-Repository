@@ -1,61 +1,49 @@
 {
-  "name": "Windows Update for Business (rolling ring)",
+  "deadlineForQualityUpdatesInDays": 2,
+  "updateWeeks": null,
+  "displayName": "Windows Update for Business (rolling ring)",
+  "driversExcluded": false,
+  "qualityUpdatesRollbackStartDateTime": "0001-01-01T00:00:00Z",
+  "deliveryOptimizationMode": "userDefined",
+  "engagedRestartTransitionScheduleInDays": null,
+  "prereleaseFeatures": "userDefined",
+  "qualityUpdatesWillBeRolledBack": false,
+  "featureUpdatesPauseExpiryDateTime": "2026-01-12T14:24:25.7783687Z",
+  "autoRestartNotificationDismissal": "notConfigured",
+  "featureUpdatesPaused": false,
   "description": "Mises a jour signees, deferral Quality 2j / Feature 7j, rollback automatique.",
-  "platforms": "windows10",
-  "technologies": "mdm",
+  "engagedRestartDeadlineInDays": null,
   "roleScopeTagIds": [
     "0"
   ],
-  "settings": [
-    {
-      "settingInstance": {
-        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-        "settingDefinitionId": "device_vendor_msft_policy_config_update_allowautoupdate",
-        "choiceSettingValue": {
-          "value": "device_vendor_msft_policy_config_update_allowautoupdate_4",
-          "children": []
-        }
-      }
-    },
-    {
-      "settingInstance": {
-        "@odata.type": "#microsoft.graph.deviceManagementSimpleSettingInstance",
-        "settingDefinitionId": "device_vendor_msft_policy_config_update_deferqualityupdatesperiodindays",
-        "simpleSettingValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "value": 2
-        }
-      }
-    },
-    {
-      "settingInstance": {
-        "@odata.type": "#microsoft.graph.deviceManagementSimpleSettingInstance",
-        "settingDefinitionId": "device_vendor_msft_policy_config_update_deferfeatureupdatesperiodindays",
-        "simpleSettingValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "value": 7
-        }
-      }
-    },
-    {
-      "settingInstance": {
-        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-        "settingDefinitionId": "device_vendor_msft_policy_config_update_excludewudriversinqualityupdate",
-        "choiceSettingValue": {
-          "value": "device_vendor_msft_policy_config_update_excludewudriversinqualityupdate_0",
-          "children": []
-        }
-      }
-    },
-    {
-      "settingInstance": {
-        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-        "settingDefinitionId": "device_vendor_msft_policy_config_update_allowmuupdateservice",
-        "choiceSettingValue": {
-          "value": "device_vendor_msft_policy_config_update_allowmuupdateservice_1",
-          "children": []
-        }
-      }
-    }
-  ]
+  "featureUpdatesRollbackStartDateTime": "0001-01-01T00:00:00Z",
+  "engagedRestartSnoozeScheduleInDays": null,
+  "qualityUpdatesPauseExpiryDateTime": "0001-01-01T00:00:00Z",
+  "qualityUpdatesPauseStartDate": null,
+  "featureUpdatesWillBeRolledBack": false,
+  "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
+  "postponeRebootUntilAfterDeadline": false,
+  "deadlineForFeatureUpdatesInDays": 7,
+  "updateNotificationLevel": "defaultNotifications",
+  "featureUpdatesRollbackWindowInDays": 15,
+  "qualityUpdatesPaused": false,
+  "qualityUpdatesDeferralPeriodInDays": 7,
+  "allowWindows11Upgrade": false,
+  "scheduleImminentRestartWarningInMinutes": null,
+  "installationSchedule": {
+    "activeHoursEnd": "18:00:00.0000000",
+    "@odata.type": "#microsoft.graph.windowsUpdateActiveHoursInstall",
+    "activeHoursStart": "08:00:00.0000000"
+  },
+  "deadlineGracePeriodInDays": 2,
+  "id": "00000000-0000-0000-0000-000000000000",
+  "automaticUpdateMode": "autoInstallAtMaintenanceTime",
+  "businessReadyUpdatesOnly": "businessReadyOnly",
+  "featureUpdatesDeferralPeriodInDays": 7,
+  "userWindowsUpdateScanAccess": "enabled",
+  "scheduleRestartWarningInHours": null,
+  "userPauseAccess": "enabled",
+  "featureUpdatesPauseStartDate": null,
+  "skipChecksBeforeRestart": false,
+  "microsoftUpdateServiceAllowed": true
 }

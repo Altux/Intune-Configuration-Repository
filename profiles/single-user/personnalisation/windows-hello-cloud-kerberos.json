@@ -1,15 +1,12 @@
 {
-  "name": "[POC_REPLACE] Windows HELLO - KERBEROS",
+  "name": "Windows Hello for Business + Cloud Kerberos",
   "technologies": "mdm",
   "platforms": "windows10",
-  "id": "aaafda2e-8114-4c0b-8267-2df9a3d2689b",
+  "id": "00000000-0000-0000-0000-000000000000",
   "roleScopeTagIds": [
     "0"
   ],
-  "description": "",
-  "lastModifiedDateTime": "2026-04-15T13:24:54.8730329Z",
-  "settingCount": 2,
-  "createdDateTime": "2026-04-15T13:23:37.5878252Z",
+  "description": "Active Windows Hello (PIN, biometrie) avec Cloud Kerberos Trust pour SSO transparent vers les ressources on-prem sans hybrid AD.",
   "templateReference": {
     "templateDisplayVersion": null,
     "templateDisplayName": null,
@@ -20,7 +17,7 @@
   "creationSource": null,
   "settings": [
     {
-      "id": "0",
+      "id": "00000000-0000-0000-0000-000000000000",
       "settingInstance": {
         "settingInstanceTemplateReference": null,
         "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
@@ -47,7 +44,7 @@
       }
     },
     {
-      "id": "1",
+      "id": "00000000-0000-0000-0000-000000000000",
       "settingInstance": {
         "settingInstanceTemplateReference": null,
         "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",

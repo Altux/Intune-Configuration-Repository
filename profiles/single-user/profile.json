@@ -2,37 +2,98 @@
   "schemaVersion": "2.0",
   "id": "single-user",
   "displayName": "Poste utilisateur dedie",
-  "description": "Modele entreprise standard : 1 utilisateur principal par appareil.",
+  "description": "Modele entreprise standard : 1 utilisateur principal par appareil. Autopilot user-driven, Windows Hello, BitLocker TPM+PIN, ASR Block, App Control WDAC, Windows Update for Business.",
   "scope": "user-affinity",
+  "platform": "windows11",
+  "minimumOsVersion": "10.0.22631",
   "autopilot": [
-    { "path": "autopilot/autopilot-deployment-profile.json", "label": "Autopilot user-driven (deviceUsageType=singleUser)" }
+    {
+      "path": "autopilot/autopilot-deployment-profile.json",
+      "label": "Autopilot user-driven (deviceUsageType=singleUser)"
+    }
   ],
   "esp": [
-    { "path": "esp/esp-page.json", "label": "Enrollment Status Page (timeout 120 min)" }
+    {
+      "path": "esp/esp-page.json",
+      "label": "Enrollment Status Page (timeout 120 min)"
+    }
   ],
   "conformite": [
-    { "path": "conformite/compliance-windows.json", "label": "Compliance Win11 (OS min, password, BitLocker, Defender)" }
+    {
+      "path": "conformite/compliance-windows.json",
+      "label": "Compliance Win11 (OS min, password, BitLocker, Defender)"
+    }
   ],
   "personnalisation": [
-    { "path": "personnalisation/taskbar-layout.json",               "label": "TaskBar Layout" },
-    { "path": "personnalisation/configurations-25h2.json",          "label": "Personnalisation 25H2" },
-    { "path": "personnalisation/delivery-optimization.json",        "label": "Delivery Optimization" },
-    { "path": "personnalisation/health-monitoring.json",            "label": "Health Monitoring" },
-    { "path": "personnalisation/wireless-display.json",             "label": "Wireless Display" },
-    { "path": "personnalisation/windows-hello-cloud-kerberos.json", "label": "Windows Hello Cloud Kerberos" }
+    {
+      "path": "personnalisation/taskbar-layout.json",
+      "label": "Disposition de la barre des taches"
+    },
+    {
+      "path": "personnalisation/configurations-25h2.json",
+      "label": "Personnalisation Windows 11 25H2"
+    },
+    {
+      "path": "personnalisation/delivery-optimization.json",
+      "label": "Delivery Optimization (P2P LAN)"
+    },
+    {
+      "path": "personnalisation/health-monitoring.json",
+      "label": "Windows Health Monitoring"
+    },
+    {
+      "path": "personnalisation/wireless-display.json",
+      "label": "Wireless Display & MDM hardening"
+    },
+    {
+      "path": "personnalisation/windows-hello-cloud-kerberos.json",
+      "label": "Windows Hello for Business + Cloud Kerberos"
+    },
+    {
+      "path": "personnalisation/OneDrive.json",
+      "label": "OneDrive Known Folder Move + Files On-Demand"
+    }
   ],
   "securite": [
-    { "path": "securite/01-bitlocker.json",                     "label": "BitLocker TPM+PIN (complement baseline)" },
-    { "path": "securite/02-asr-rules-complete.json",            "label": "ASR 16 regles Block (complement baseline)" },
-    { "path": "securite/03-firewall-block-by-default.json",     "label": "Firewall block-by-default" },
-    { "path": "securite/04-device-control-usb.json",            "label": "Device Control USB" },
-    { "path": "securite/05-exploit-protection-xml.json",        "label": "Exploit Protection XML custom" },
-    { "path": "securite/06-windows-update-rings.json",          "label": "Windows Update rings ANSSI" },
-    { "path": "securite/07-app-control-wdac.json",              "label": "App Control / WDAC base" },
-    { "path": "securite/08-defender-cloud-edr-advanced.json",   "label": "Defender CFA + scan tuning" },
-    { "path": "securite/09-device-control-additional.json",     "label": "Device Control BT/RDP/Wi-Fi/Print" },
-    { "path": "securite/10-securite-avancee-25h2.json",         "label": "Securite avancee 25H2" }
+    {
+      "path": "securite/01-bitlocker.json",
+      "label": "BitLocker TPM+PIN (complement baseline)"
+    },
+    {
+      "path": "securite/02-asr-rules-complete.json",
+      "label": "ASR 16 regles Block (complement baseline)"
+    },
+    {
+      "path": "securite/03-firewall-block-by-default.json",
+      "label": "Defender Firewall (deny inbound)"
+    },
+    {
+      "path": "securite/05-exploit-protection-xml.json",
+      "label": "Exploit Protection XML custom"
+    },
+    {
+      "path": "securite/06-windows-update-rings.json",
+      "label": "Windows Update for Business (rolling ring)"
+    },
+    {
+      "path": "securite/07-app-control-wdac.json",
+      "label": "App Control / WDAC base"
+    },
+    {
+      "path": "securite/08-defender-cloud-edr-advanced.json",
+      "label": "Defender CFA + scan tuning"
+    },
+    {
+      "path": "securite/09-device-control-additional.json",
+      "label": "Device Control (BT, RDP, Wi-Fi, imprimantes)"
+    },
+    {
+      "path": "securite/10-securite-avancee-25h2.json",
+      "label": "Securite avancee Windows 11 25H2"
+    }
   ],
   "notes": [
+    "Le fichier 04-device-control-usb.json a ete retire car couvert par 09-device-control-additional.json.",
+    "Le placeholder 'tenantid' dans personnalisation/OneDrive.json doit etre remplace par le GUID du tenant cible avant import."
   ]
 }

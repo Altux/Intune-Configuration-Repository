@@ -1,38 +1,27 @@
 {
-  "managementServiceAppId": null,
-  "hardwareHashExtractionEnabled": true,
-  "createdDateTime": "2025-12-08T09:24:08.4065081Z",
-  "enableWhiteGlove": true,
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/windowsAutopilotDeploymentProfiles/$entity",
-  "extractHardwareHash": true,
-  "outOfBoxExperienceSettings": {
-    "deviceUsageType": "singleUser",
-    "hidePrivacySettings": true,
-    "hideEscapeLink": true,
-    "userType": "standard",
-    "hideEULA": true,
-    "skipKeyboardSelectionPage": true
-  },
-  "preprovisioningAllowed": true,
-  "displayName": "[POC_REPLACE] FullCloud",
-  "enrollmentStatusScreenSettings": null,
-  "outOfBoxExperienceSetting": {
-    "escapeLinkHidden": true,
-    "privacySettingsHidden": true,
-    "userType": "standard",
-    "keyboardSelectionPageSkipped": true,
-    "eulaHidden": true,
-    "deviceUsageType": "singleUser"
-  },
-  "id": "43c59c8a-4efa-4642-8d86-b8735f62e868",
   "@odata.type": "#microsoft.graph.azureADWindowsAutopilotDeploymentProfile",
-  "deviceType": "windowsPc",
-  "deviceNameTemplate": "",
-  "language": "os-default",
+  "id": "00000000-0000-0000-0000-000000000000",
+  "displayName": "Autopilot user-driven (FullCloud)",
+  "description": "Autopilot user-driven cloud-only : 1 utilisateur principal, hash hardware auto-extrait, white-glove et pre-provisioning autorises, OOBE simplifiee.",
   "roleScopeTagIds": [
     "0"
   ],
-  "description": "",
+  "deviceType": "windowsPc",
+  "deviceNameTemplate": "",
+  "language": "os-default",
   "locale": "os-default",
-  "lastModifiedDateTime": "2025-12-18T09:57:40.4706054Z"
+  "managementServiceAppId": null,
+  "enrollmentStatusScreenSettings": null,
+  "hardwareHashExtractionEnabled": true,
+  "extractHardwareHash": true,
+  "enableWhiteGlove": true,
+  "preprovisioningAllowed": true,
+  "outOfBoxExperienceSettings": {
+    "deviceUsageType": "singleUser",
+    "userType": "standard",
+    "hidePrivacySettings": true,
+    "hideEscapeLink": true,
+    "hideEULA": true,
+    "skipKeyboardSelectionPage": true
+  }
 }

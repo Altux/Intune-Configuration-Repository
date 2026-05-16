@@ -1,15 +1,12 @@
 {
-  "name": "[POC_REPLACE] TaskBar Layout",
+  "name": "Disposition de la barre des taches",
   "technologies": "mdm",
   "platforms": "windows10",
-  "id": "c10c29ca-4b63-479a-861b-c3df2acb3322",
+  "id": "00000000-0000-0000-0000-000000000000",
   "roleScopeTagIds": [
     "0"
   ],
-  "description": "",
-  "lastModifiedDateTime": "2026-04-20T14:12:45.0129378Z",
-  "settingCount": 1,
-  "createdDateTime": "2026-04-20T14:12:45.0129378Z",
+  "description": "Layout standardise de la barre des taches Windows 11 : applis epinglees par defaut, alignement, comportement multi-ecrans.",
   "templateReference": {
     "templateDisplayVersion": null,
     "templateDisplayName": null,
@@ -20,7 +17,7 @@
   "creationSource": null,
   "settings": [
     {
-      "id": "0",
+      "id": "00000000-0000-0000-0000-000000000000",
       "settingInstance": {
         "settingInstanceTemplateReference": null,
         "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
