@@ -21,7 +21,7 @@
     "userType": "standard",
     "hidePrivacySettings": true,
     "hideEscapeLink": true,
-    "hideEULA": true,
+    "eulaHidden": true,
     "skipKeyboardSelectionPage": true
   }
 }
