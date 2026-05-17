@@ -2,7 +2,7 @@
   "schemaVersion": "2.0",
   "id": "single-user",
   "displayName": "Poste utilisateur dedie",
-  "description": "Modele entreprise standard : 1 utilisateur principal par appareil. Autopilot user-driven, Windows Hello, BitLocker TPM+PIN, ASR Block, App Control WDAC, Windows Update for Business.",
+  "description": "Modele entreprise standard : 1 utilisateur principal par appareil. Autopilot user-driven, Windows Hello, Windows Update for Business, durcissement 25H2.",
   "scope": "user-affinity",
   "platform": "windows11",
   "minimumOsVersion": "10.0.22631",
@@ -56,44 +56,16 @@
   ],
   "securite": [
     {
-      "path": "securite/01-bitlocker.json",
-      "label": "BitLocker TPM+PIN (complement baseline)"
-    },
-    {
-      "path": "securite/02-asr-rules-complete.json",
-      "label": "ASR 16 regles Block (complement baseline)"
-    },
-    {
-      "path": "securite/03-firewall-block-by-default.json",
-      "label": "Defender Firewall (deny inbound)"
-    },
-    {
-      "path": "securite/05-exploit-protection-xml.json",
-      "label": "Exploit Protection XML custom"
-    },
-    {
-      "path": "securite/06-windows-update-rings.json",
+      "path": "securite/windows-update-rings.json",
       "label": "Windows Update for Business (rolling ring)"
     },
     {
-      "path": "securite/07-app-control-wdac.json",
-      "label": "App Control / WDAC base"
-    },
-    {
-      "path": "securite/08-defender-cloud-edr-advanced.json",
-      "label": "Defender CFA + scan tuning"
-    },
-    {
-      "path": "securite/09-device-control-additional.json",
-      "label": "Device Control (BT, RDP, Wi-Fi, imprimantes)"
-    },
-    {
-      "path": "securite/10-securite-avancee-25h2.json",
+      "path": "securite/securite-avancee-25h2.json",
       "label": "Securite avancee Windows 11 25H2"
     }
   ],
   "notes": [
-    "Le fichier 04-device-control-usb.json a ete retire car couvert par 09-device-control-additional.json.",
-    "Le placeholder 'tenantid' dans personnalisation/OneDrive.json doit etre remplace par le GUID du tenant cible avant import."
+    "Le placeholder 'tenantid' dans personnalisation/OneDrive.json doit etre remplace par le GUID du tenant cible avant import.",
+    "Le profil ne reference que les fichiers reellement presents dans le dossier. Les complements baseline (BitLocker TPM+PIN, ASR 16 regles Block, Firewall deny inbound, Exploit Protection XML, App Control WDAC, Defender CFA, Device Control) ne sont pas inclus dans ce repository : ils sont supposes appliques via les Security Baselines Intune."
   ]
 }
