@@ -1,27 +1,36 @@
 {
-  "@odata.type": "#microsoft.graph.azureADWindowsAutopilotDeploymentProfile",
-  "id": "00000000-0000-0000-0000-000000000000",
+  "managementServiceAppId": null,
+  "hardwareHashExtractionEnabled": true,
+  "enableWhiteGlove": true,
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/windowsAutopilotDeploymentProfiles/$entity",
+  "extractHardwareHash": true,
+  "outOfBoxExperienceSettings": {
+    "deviceUsageType": "singleUser",
+    "hidePrivacySettings": true,
+    "hideEscapeLink": true,
+    "userType": "standard",
+    "hideEULA": true,
+    "skipKeyboardSelectionPage": true
+  },
+  "preprovisioningAllowed": true,
   "displayName": "Autopilot user-driven (FullCloud)",
-  "description": "Autopilot user-driven cloud-only : 1 utilisateur principal, hash hardware auto-extrait, white-glove et pre-provisioning autorises, OOBE simplifiee.",
-  "roleScopeTagIds": [
-    "0"
-  ],
+  "enrollmentStatusScreenSettings": null,
+  "outOfBoxExperienceSetting": {
+    "escapeLinkHidden": true,
+    "privacySettingsHidden": true,
+    "userType": "standard",
+    "keyboardSelectionPageSkipped": true,
+    "eulaHidden": true,
+    "deviceUsageType": "singleUser"
+  },
+  "id": "00000000-0000-0000-0000-000000000000",
+  "@odata.type": "#microsoft.graph.azureADWindowsAutopilotDeploymentProfile",
   "deviceType": "windowsPc",
   "deviceNameTemplate": "",
   "language": "os-default",
-  "locale": "os-default",
-  "managementServiceAppId": null,
-  "enrollmentStatusScreenSettings": null,
-  "hardwareHashExtractionEnabled": true,
-  "extractHardwareHash": true,
-  "enableWhiteGlove": true,
-  "preprovisioningAllowed": true,
-  "outOfBoxExperienceSettings": {
-    "deviceUsageType": "singleUser",
-    "userType": "standard",
-    "hidePrivacySettings": true,
-    "hideEscapeLink": true,
-    "eulaHidden": true,
-    "skipKeyboardSelectionPage": true
-  }
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "description": "Autopilot user-driven cloud-only : 1 utilisateur principal, hash hardware auto-extrait, white-glove et pre-provisioning autorises, OOBE simplifiee.",
+  "locale": "os-default"
 }
