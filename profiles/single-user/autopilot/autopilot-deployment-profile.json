@@ -1,7 +1,7 @@
 {
   "@odata.type": "#microsoft.graph.azureADWindowsAutopilotDeploymentProfile",
-  "displayName": "Autopilot user-driven (FullCloud)",
-  "description": "Autopilot user-driven cloud-only : 1 utilisateur principal, hash hardware auto-extrait, white-glove et pre-provisioning autorises, OOBE simplifiee.",
+  "displayName": "Autopilot user driven FullCloud",
+  "description": "Autopilot user driven cloud only : 1 utilisateur principal, hash hardware auto extrait, white glove et preprovisioning autorises, OOBE simplifiee.",
   "deviceNameTemplate": "",
   "locale": "os-default",
   "preprovisioningAllowed": true,
